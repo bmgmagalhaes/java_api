@@ -4,7 +4,6 @@ import com.google.gson.Gson;
 import models.Address;
 import models.AddressViaCepAPI;
 
-import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -19,7 +18,7 @@ public class FindCEP {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(uri)
                 .build();
-        HttpResponse<String> response = null;
+        HttpResponse<String> response;
 
         try {
             response = client

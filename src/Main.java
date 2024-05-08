@@ -10,13 +10,12 @@ public class Main {
     public static void main(String[] args)  {
 
         Scanner reader = new Scanner(System.in);
-        String cep = "";
         List<Address> addressList = new ArrayList<>();
 
         while (true){
 
             System.out.print("Informe um CEP: ");
-            cep = reader.nextLine();
+            String cep = reader.nextLine();
 
             if (cep.equals("*")){
                 break;
